@@ -1,4 +1,4 @@
-#Thu Jan 25 17:28:12 CST 2018
+#Tue Jan 30 17:29:46 CST 2018
 base.0=G\:\\cordova-demo\\firstApp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
 file.0=G\:\\cordova-demo\\firstApp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

@@ -38,6 +38,7 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
         <link rel="stylesheet" type="text/css" href="css/pure-min.css" />
 
+        <script type="text/javascript" src="js/vue.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -45,6 +46,28 @@
         <title>Hello Cordova</title>
     </head>
     <body>
+
+        <div id="appvue">
+            <table style="width: 200rem;height: 100rem;border:1px solid red;text-align: center">
+                <thead style="background-color: orange">
+                <tr>
+                    <td>name</td>
+                    <td>address</td>
+                    <td>rssi</td>
+                    <td>status</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="equipment in devices">
+                    <td>{{equipment.name}}</td>
+                    <td>{{equipment.address}}</td>
+                    <td>{{equipment.rssi}}</td>
+                    <td>{{equipment.status}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="js/vuejs.js"></script>
 
         <div id="home" data-role="page">
             <div data-role="content">
@@ -64,6 +87,8 @@
                 </ul>
             </div>
         </div>
+
+
         <script type="text/template" id="device">
             <li data-address="{0}">
                 <h2>{1}</h2>
@@ -111,6 +136,5 @@
                 <a href="#" class="pure-button writeDescriptor">Write Descriptor</a>
             </li>
         </script>
-
     </body>
 </html>
