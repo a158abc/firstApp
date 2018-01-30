@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.gjw.wp"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.gjw.wp"
+    },
+    "cordova-plugin-bluetoothle": {
+      "PACKAGE_NAME": "com.gjw.wp"
+    }
+  },
+  "dependent_plugins": {}
+}
